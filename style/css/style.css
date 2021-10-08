@@ -1,0 +1,427 @@
+@import url(fontiran.css);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 2500px;
+}
+
+body {
+  font-family: dana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol" !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav-header {
+  background-color: #000000;
+  height: 64px;
+}
+
+.navbar-nav {
+  direction: rtl;
+  position: relative;
+  width: 100%;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 60px;
+}
+
+.navbar-nav .nav-item {
+  transition: all 0.1s ease-in;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: #292c2e;
+  border-bottom-color: #c20000;
+}
+
+.navbar-nav .nav-item a.nav-link {
+  color: #eff1f3 !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 10px;
+}
+
+.navbar-nav .navbar-nav .nav-link:focus,
+.navbar-nav .navbar-nav .nav-link:hover,
+.navbar-nav .navbar-nav .nav-link:active {
+  color: white !important;
+}
+
+.dropdown-menu {
+  padding: 0 0;
+}
+
+.list-group {
+  width: 100%;
+  margin-top: -8px;
+}
+
+.Sub_menu_C {
+  width: 20%;
+}
+
+/*این برای زیر منوها هست */
+#custom-main-dropdown-menu-C {
+  width: 1300px;
+  border-radius: 2px;
+  background-color: #383b3d;
+  position: absolute;
+  right: 0px;
+  height: 575px;
+  top: 61px;
+}
+
+
+li.list-group-item {
+  background-color: transparent;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(137, 147, 155, 0.23);
+  margin-bottom: unset !important;
+}
+
+ul.list-group li a {
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #eff1f3;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.list-group li:hover {
+  background-color: #323537;
+  color: #eff1f3;
+}
+
+ul.list-group li:hover a {
+  padding-right: 0.5rem;
+}
+
+/*مهممم: وقتی که کلا زیر  منو میره */
+#custom-main-dropdown-menu-C {
+  display: none;
+}
+
+/* هاور بر روی کانادا */
+/* .nav-item:hover #custom-main-dropdown-menu-C {
+  display: block;
+} */
+
+.Sub_menu_title {
+  margin-bottom: 8px;
+  color: white;
+  font-size: 17px;
+  line-height: 1.1em;
+  padding: 25px 15px;
+  font-weight: 600;
+  display: block;
+  background-color: #c20000;
+  width: 100%;
+}
+
+#custom-main-dropdown-menu-C .Sub_menu_C {
+  border-left: 1px solid black;
+  height: 573px;
+}
+
+.icon,
+.icon__S,
+.icon_uni,
+.icon_t ,
+.icon_M,
+.icon_L,
+.icon__N  {
+  color: white;
+}
+
+.list-group-item {
+  border: none;
+}
+
+li.list-group-item.border-last:last-of-type {
+  border-bottom: none !important;
+}
+
+/* استرالیا */
+
+/* چون یه ستون داریم پس باید 100 کلشو بگیزه */
+.Sub_menu_A {
+  width: 100%;
+}
+
+/* وقتی کل منوی استرالیا به صورت پیش قرض نان می شود */
+#custom-main-dropdown-menu-A {
+  display: none;
+}
+
+/* .nav-item:hover #custom-main-dropdown-menu-A {
+  display: block;
+}  */
+
+#custom-main-dropdown-menu-A {
+  width: 307.25px;
+  border-radius: 2px;
+  background-color: #383b3d;
+  position: absolute;
+  top: 61px;
+  right: 47px !important;
+}
+
+/* نیوزلند  */
+
+.Sub_menu_N {
+  width: 100%;
+}
+
+#custom-main-dropdown-menu-N {
+  display: none;
+}
+
+#custom-main-dropdown-menu-N {
+  width: 307.25px;
+  border-radius: 2px;
+  background-color: #383b3d;
+  position: absolute;
+  top: 61px;
+  right: 108px !important;
+}
+
+/******   MEID QUERY *************/
+
+@media screen and (min-width: 992px) and (max-width: 1159px) {
+  .navbar-brand img {
+    width: auto;
+    height: 48px;
+  }
+  .navbar-nav .nav-item a.nav-link {
+    color: white !important;
+    font-size: 12px;
+  }
+
+  #custom-main-dropdown-menu-C {
+    top: 59px;
+  }
+
+  #custom-main-dropdown-menu-A {
+    top: 60px !important;
+    width: 245.75px;
+  }
+  #custom-main-dropdown-menu-N {
+    top: 60px;
+    width: 245.75px;
+  }
+}
+
+/****** wrapper mobile ********/
+
+#navmobile {
+  background-color: #000000;
+  height: 64px;
+}
+
+#custom-container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #383b3d;
+  overflow-x: hidden;
+  padding-top: 60px;
+  text-align: right;
+  transition: all 0.5s;
+}
+
+.navbar-sidbar-right .nav-item-sidbar-right a.nav-link-sidbar-right {
+  color: #eff1f3;
+  font-size: 15px;
+  text-decoration: none !important;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-item-sidbar-right {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #6b7682;;
+}
+
+ .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none !important;
+  padding: 0.375rem 0.75rem;
+} 
+
+.closebtn:hover {
+  color: #ccc;
+}
+
+.icon-fas {
+  width: 40px;
+  color: white;
+
+}
+
+.btn {
+  border: none;
+  outline: none;
+  transition: 0.35s ease all;
+
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*برای هاور روی  li اصلی*/
+li.nav-item-sidbar-right:hover,
+li.sub-menu:hover,
+li.list:hover {
+  background-color: #1a1d1f;
+}
+
+.icon {
+  color: white;
+  transition: transform 0.8s ease-in-out;
+}
+
+.show .icon__S,
+.show .icon__C,
+.show .icon_uni,
+.show .icon_t,
+.show .icon_M,
+.show .icon_L,
+.show .icon__A,
+.show .icon__AA,
+.show .icon__N,
+.show .icon__NN {
+  margin-left: 85%;
+  color: white;
+  transition: transform 0.8s ease-in-out;
+}
+
+/*هر چی  تگ ای  داخل شو هست*/
+.show a {
+  color: #f1f1f1;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 8px;
+}
+
+#sub__menu .sub-menu .nav-link {
+  margin-right: 2%;
+}
+
+
+ul.navbar-sidbar-right{
+  margin-top: 50px;
+}
+.sub-menu {
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  border-bottom: 1px solid #6b7682;;
+}
+
+#mega__menu li.mega-menu {
+  padding: 0.3rem;
+}
+
+/*  برای این که نمایش ندهد */
+ul#sub__menu,
+ul#list-group-mobile,
+ul#list-group-mobileUNI,
+ul#list-group-mobileTown,
+ul#list-group-mobilemajor,
+ul#list-group-mobilelifs,
+ul#sub__menu-A,
+ul#list-group-mobile__A,
+ul#sub__menu-N,
+ul#list-group-mobile__N
+ {
+  display: none;
+  transition: 1s;
+  -webkit-animation: scale-up-ver-center 2009ms cubic-bezier(0.19, 1, 0.22, 1)
+    alternate forwards;
+  animation: scale-up-ver-center 2009ms cubic-bezier(0.19, 1, 0.22, 1) alternate
+    forwards;
+}
+
+.list {
+  padding: 8px 10px;
+  border-bottom: 1px solid #6b7682;;
+}
+
+.d-block{
+  display: block;
+}
+
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+/* madia query */
+@media screen and (min-width: 992px) {
+  .wrapper_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #nav-header {
+    display: none;
+  }
+}
